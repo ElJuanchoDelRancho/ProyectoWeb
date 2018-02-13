@@ -10,6 +10,9 @@
   <title></title>
 </head>
 <body>
+  <?php
+    include("navbar.php");
+  ?>
 <div class="container">
   <h2>Promociones</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
