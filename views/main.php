@@ -4,25 +4,22 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="file:///F:/7mo/Web/pagina_web.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title></title>
+  <title>StrongSports</title>
 </head>
 <body>
   <?php
     include("navbar.php");
   ?>
 <div class="container">
-  <h2>Promociones</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-  
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <a href="file:///D:/7mo/Web/pagina_web_1-3.html"><img src="https://images.pexels.com/photos/532805/pexels-photo-532805.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Football" style="width:100%;"></a>
+        <a href="#"><img src="https://images.pexels.com/photos/532805/pexels-photo-532805.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Football" style="width:100%;"></a>
          <div class="carousel-caption">
           <h3>Jerseys</h3>
           <p>40% de descuento</p>
