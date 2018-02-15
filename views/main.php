@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php
-    include("navbar.php");
+    include'navbar.php';
   ?>
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -70,5 +70,8 @@
     </a>
   </div>
 </div>
+<?php
+    include'footer.php';
+  ?>
 </body>
 </html>
