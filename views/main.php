@@ -9,9 +9,7 @@
   <title>StrongSports</title>
 </head>
 <body>
-  <?php
-    include'navbar.php';
-  ?>
+  <?php require ('navbar.php'); ?>
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -70,8 +68,6 @@
     </a>
   </div>
 </div>
-<?php
-    include'footer.php';
-  ?>
+<?php require ('footer.php');?>
 </body>
 </html>

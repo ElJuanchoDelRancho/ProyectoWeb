@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="file:///F:/7mo/Web/pagina_web.css">
+  <link rel="stylesheet" type="text/css" href="../style/_footerstyle.css">
 </head>
 <body>
 <div class="container-fluid bg-grey fondo">
