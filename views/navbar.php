@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../style/_navbarstyle.css">
+	<link rel="stylesheet" type="text/css" href="../styles/_navbarstyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<nav>
 		<div class="nav-content">
 			<div class="logo">
-				<a href="">LogoPrro</a>
+				<a href="main.php">LogoPrro</a>
 			</div>
 			<div class="nav-blocks">
 				<div class="nav-link dropdown">
