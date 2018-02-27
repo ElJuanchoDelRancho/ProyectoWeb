@@ -2,9 +2,9 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" type="text/css" href="../styles/carusel_css.css">
+  <link rel="stylesheet" type="text/css" href="../styles/_carruselstyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="../js/carusel_js.js"></script>
+  <script src="../js/carrusel.js"></script>
 </head>
 <body>
 <!-- Slideshow container -->
@@ -13,7 +13,7 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <img src="https://images.pexels.com/photos/883313/pexels-photo-883313.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text">Caption One</div>
   </div>
 
   <div class="mySlides fade">

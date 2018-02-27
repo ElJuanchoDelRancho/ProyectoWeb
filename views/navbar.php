@@ -4,6 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../styles/_navbarstyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="utf-8">
 </head>
 <body>
 	<nav>
@@ -39,6 +40,9 @@
 						<a href="">Primero</a>
 						<a href="">Segundo</a>
 					</div>
+				</div>
+				<div class="nav-link">
+					<a href="contact.php" class="dropbtn">Contacto</a>
 				</div>
 			</div>
 			<div class="logbtn">

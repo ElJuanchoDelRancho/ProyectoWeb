@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>StrongSports</title>
-	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 </head>
 <body>
 <?php
