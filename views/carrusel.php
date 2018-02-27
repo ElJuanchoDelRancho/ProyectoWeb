@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../styles/carusel_css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="container">
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <!-- Indicators -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-	    <!-- Wrapper for slides -->
-	    <div class="carousel-inner">
-	      <div class="item active">
-	        <a href="#"><img src="https://images.pexels.com/photos/532805/pexels-photo-532805.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Football" style="width:100%;"></a>
-	         <div class="carousel-caption">
-	          <h3>Jerseys</h3>
-	          <p>40% de descuento</p>
-	        </div>
-	      </div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="https://images.pexels.com/photos/883313/pexels-photo-883313.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-	      <div class="item">
-	        <img src="https://images.pexels.com/photos/209841/pexels-photo-209841.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Balones" style="width:100%;">
-	          <div class="carousel-caption">
-	          <h3>Balones</h3>
-	          <p>Balones 2x1</p>
-	        </div>
-	      </div>
+  <div class="mySlides fade">
+    <img src="https://images.pexels.com/photos/747909/pexels-photo-747909.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
 
-	        <div class="item">
-	        <img src="https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Pesas" style="width:100%;">
-	          <div class="carousel-caption">
-	          <h3>Pesas</h3>
-	          <p>Pesas 20% de descuento</p>
-	        </div>
-	      </div>
+  <div class="mySlides fade">
+    <img src="https://images.pexels.com/photos/883313/pexels-photo-883313.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
-	        <div class="item">
-	        <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Raquetas" style="width:100%;">
-	          <div class="carousel-caption">
-	          <h3>Raquetas</h3>
-	          <p>Raquetas desde 2000 pesos</p>
-	        </div>
-	      </div>
-	    
-	      <div class="item">
-	        <img src="https://images.pexels.com/photos/386024/pexels-photo-386024.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bicicletas" style="width:100%;">
-	          <div class="carousel-caption">
-	          <h3>Bicicletas  </h3>
-	          <p>Bicicletas desde 4000 pesos</p>
-	        </div>
-	      </div>
-	    </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-	    <!-- Left and right controls -->
-	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	      <span class="glyphicon glyphicon-chevron-left"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-right"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	  </div>
-	</div>
+<!-- The dots/circles -->
+
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000);
+}
+</script>
 </body>
 </html>
