@@ -4,6 +4,7 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="../styles/carusel_css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../js/carusel_js.js"></script>
 </head>
 <body>
 <!-- Slideshow container -->
@@ -33,30 +34,6 @@
 
 <!-- The dots/circles -->
 
-<script type="text/javascript">
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2000);
-}
-</script>
 </body>
 </html>
