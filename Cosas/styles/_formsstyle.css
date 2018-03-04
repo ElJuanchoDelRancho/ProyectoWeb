@@ -1,0 +1,19 @@
+input[type=text] {
+	height: 33px;
+	font-size: 12pt;
+	border: 1px solid #a8a8a8;
+	transition: all 0.5s;
+	padding-left: 0.5em;
+}
+
+input[type=text]:hover {
+	border: 1px solid black;
+}
+
+input {
+	outline: none;
+}
+
+textarea {
+	outline: none;
+}
