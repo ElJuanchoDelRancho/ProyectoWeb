@@ -2,19 +2,18 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../styles/_navbarstyle.css">
-	<link rel="stylesheet" type="text/css" href="../styles/_bannerstyle.css">
-	<link rel="stylesheet" type="text/css" href="../styles/_formsstyle.css">
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-	
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/_navbarstyle.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/_bannerstyle.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/_formsstyle.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
 	<meta charset="utf-8">
 </head>
 <body>
 	<div class="banner">
 		<div class="logo">
-			<a href="main.php"></a>
+			<a href="./"></a>
 		</div>
 		<div class="searchbar">
 			<form>
@@ -58,7 +57,7 @@
 					</div>
 				</div>
 				<div class="nav-link">
-					<a href="contact.php" class="dropbtn">Contacto</a>
+					<a href="contact" class="dropbtn">Contacto</a>
 				</div>
 			</div>
 		</div>
