@@ -1,1 +1,3 @@
-index.php
+<?php
+	header('Location: views/main.php');
+?>

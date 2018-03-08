@@ -1,0 +1,43 @@
+input[type=text] {
+	height: 33px;
+	width: 80%;
+}
+
+input[type=text]:hover {
+	border: 1px solid black;
+}
+
+input, textarea {
+	outline: none;
+	padding-left: 0.5em;
+	transition: all 0.5s;
+	border: 1px solid #a8a8a8;
+	font-size: 12pt;
+	
+}
+
+textarea {
+	resize: none;
+	width: 90%;
+}
+
+textarea:hover {
+	border: 1px solid black;
+}
+
+button {
+	width: 80%;
+	border: 2px solid #333;
+	background-color: #333;
+	color: white;
+	padding: 14px;
+	font-size: 12pt;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: white;
+	color: #333;
+	cursor: pointer;
+}
