@@ -3,51 +3,40 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/producto.css">
+	<script src="../js/producto.js"></script>
+	<!-- Latest compiled and minified CSS -->
 </head>
 <body>
-<div class="row">
-  <div class="col l4 m8 s12 offset-m2 offset-l4">
-    <div class="product-card">
-        <div class="card">
-            <div class="card-image">
-                <a href="#" class="btn-floating btn-large price waves-effect waves-light brown darken-3">5 €</a>
-<!-- alternative image links:
-http://i58.photobucket.com/albums/g249/Landry_Bete/dessert14_zpsg6u4skv6.jpg
-https://www.dropbox.com/s/15xhr85exkhusgi/dessert14.jpg?raw=1 -->
-                <img src="https://res.cloudinary.com/landry-bete/image/upload/v1488769144/dessert14_trnhnj.jpg" alt="product-img">
-                <span class="card-title"><span>Macaron</span></span>
-            </div>
-            <ul class="card-action-buttons">
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
-                </li>
-                <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
-                </li>
-                <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
-                </li>
-            </ul>
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12">
-                        <p>
-                            <strong>Description:</strong> <br />
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
-                        </p>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                        <div style="width: 95%; margin: auto;">
-                            <div class="chip">Dessert</div>
-                            <div class="chip">French</div>
-                            <div class="chip">Sweet</div>
-                            <div class="chip">Chocolate</div>
-                            <div class="chip"><a href="#">More...</a></div>
-                        </div>
-                </div>
-            </div>
-        </div>
+
+<figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/>
+  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
+  <figcaption>
+    <h3>Pudol Doux</h3>
+    <p>All this modern technology just makes people try to do everything at once.</p>
+    <div class="price">
+      <s>$24.00</s>$19.00
     </div>
-  </div>
-</div>
+  </figcaption><a href="#"></a>
+</figure>
+<figure class="snip1418 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="sample96"/>
+  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
+  <figcaption>
+    <h3>Kurie Secco</h3>
+    <p>If you do the job badly enough, sometimes you don't get asked to do it again. </p>
+    <div class="price">
+      <s>$24.00</s>$19.00
+    </div>
+  </figcaption><a href="#"></a>
+</figure>
+<figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample92.jpg" alt="sample92"/>
+  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
+  <figcaption>
+    <h3>Zosaisan Invec</h3>
+    <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life. </p>
+    <div class="price">
+      <s>$24.00</s>$19.00
+    </div>
+  </figcaption><a href="#"></a>
+</figure>
 </body>
 </html>
