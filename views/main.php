@@ -35,7 +35,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<!-- The dots/circles -->
+ <?php require ('producto.php'); ?>
 
 <iframe class="map" src="https://snazzymaps.com/embed/50167"></iframe>
 <!--<iframe src="https://snazzymaps.com/embed/51427" class="map"/>-->
