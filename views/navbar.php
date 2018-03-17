@@ -21,7 +21,7 @@
 			</form>
 		</div>
 		<div class="log-links">
-			<div class="log-link"><a href="#">Registrarse</a></div>
+			<div class="log-link"><a href="tarjeta.php">Registrarse</a></div>
 			<div class="log-link"><a href="#">Iniciar Sesión</a></div>
 		</div>
 	</div>
