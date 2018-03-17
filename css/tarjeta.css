@@ -59,7 +59,7 @@ body {
 }
 
 .login-header {
-  background: #28d;
+  background: #444;
   padding: 20px;
   font-size: 1.4em;
   font-weight: normal;
@@ -104,14 +104,14 @@ body {
 }
 
 .login input[type="submit"] {
-  background: #28d;
+  background: #444;
   border-color: transparent;
   color: #fff;
   cursor: pointer;
 }
 
 .login input[type="submit"]:hover {
-  background: #17c;
+  background: #444;
 }
 
 /* Buttons' focus effect */
