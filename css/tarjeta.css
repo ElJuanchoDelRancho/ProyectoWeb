@@ -55,7 +55,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   border: 12px solid transparent;
-  border-bottom-color: #28d;
+  border-bottom-color: #444;
 }
 
 .login-header {
@@ -111,7 +111,7 @@ body {
 }
 
 .login input[type="submit"]:hover {
-  background: #444;
+  background: #333;
 }
 
 /* Buttons' focus effect */
