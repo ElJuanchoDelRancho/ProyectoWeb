@@ -1,9 +1,9 @@
-input[type=text] {
+input[type=text], input[type=password], input[type=email] {
 	height: 33px;
 	width: 80%;
 }
 
-input[type=text]:hover {
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
 	border: 1px solid black;
 }
 
@@ -13,10 +13,11 @@ input, textarea {
 	transition: all 0.5s;
 	border: 1px solid #a8a8a8;
 	font-size: 12pt;
-	
 }
 
 textarea {
+	font-family: sans-serif;
+	padding: 0.5em;
 	resize: none;
 	width: 90%;
 }
@@ -30,7 +31,7 @@ button {
 	border: 2px solid #333;
 	background-color: #333;
 	color: white;
-	padding: 14px;
+	padding: 10px 14px;
 	font-size: 12pt;
 	font-weight: bold;
 	transition: all 0.2s;

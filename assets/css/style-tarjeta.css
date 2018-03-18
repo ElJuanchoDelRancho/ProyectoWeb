@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 20px auto;
+	font-size: 12pt;
+	text-align: center;
+}
+
+.login-triangle {
+	width: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border: 12px solid transparent;
+	border-bottom-color: #28d;
+}
+
+.login-header {
+	background: #28d;
+	padding: 20px;
+	font-size: 16pt;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.login {
+	padding: 15px;
+	outline: 0;
+	font-family: inherit;
+	font-size: 11pt;
+}
+
+.login-header {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.login-container {
+	background: #ebebeb;
+	padding: 12px;
+	display: inline-block;
+}
+
+.login input {
+	display: inline;
+	width: 100% !important;
+	padding: 16px;
+	font-family: inherit;
+	font-size: 11pt;
+}
+
+.login input[type=checkbox] {
+	display: block;
+
+}
+
+.login p {
+	display: inline-block;
+	color: gray;
+}
+
+.login input[type=text]:hover, .login input[type=password]:hover, .login input[type=email]:hover {
+	border: 1px solid gray;
+}
+
+.login input[type=submit] {
+	background: #28d;
+	border-color: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+	background: #17c;
+}

@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../css/producto.css">
-	<script src="../js/producto.js"></script>
-	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="productos.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <script type="text/javascript" src="../assets/js/jquery-3.2.1.js"></script>
+	<script src="../assets/js/producto.js"></script>
 </head>
 <body>
 
@@ -46,3 +47,9 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+  $(".hover").mouseleave(function () {
+    $(this).removeClass("hover");
+  });
+</script>
