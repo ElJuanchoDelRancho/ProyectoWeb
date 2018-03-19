@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-03-2018 a las 18:33:53
+-- Tiempo de generación: 19-03-2018 a las 14:56:02
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -31,6 +31,37 @@ SET time_zone = "+00:00";
 CREATE TABLE `categorias` (
   `id` int(11) NOT NULL,
   `nombre` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cuentas`
+--
+
+CREATE TABLE `cuentas` (
+  `id` int(11) NOT NULL,
+  `nombreUsuario` varchar(30) NOT NULL,
+  `contrasena` varchar(30) NOT NULL,
+  `tipoCuenta` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `direcciones`
+--
+
+CREATE TABLE `direcciones` (
+  `id` int(11) NOT NULL,
+  `calle` varchar(50) NOT NULL,
+  `num_int` varchar(5) NOT NULL,
+  `num_ext` varchar(5) NOT NULL,
+  `colonia` varchar(30) NOT NULL,
+  `municipio` varchar(30) NOT NULL,
+  `estado` varchar(20) NOT NULL,
+  `codigo_postal` varchar(5) NOT NULL,
+  `id_usuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -70,12 +101,11 @@ CREATE TABLE `productos` (
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
-  `nombreUsuario` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
   `nombres` varchar(30) NOT NULL,
   `apellidos` varchar(40) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `tarjeta` varchar(16) NOT NULL
+  `tarjeta` varchar(16) NOT NULL,
+  `id_cuenta` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -103,6 +133,19 @@ ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `cuentas`
+--
+ALTER TABLE `cuentas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
 -- Indices de la tabla `facturas`
 --
 ALTER TABLE `facturas`
@@ -120,7 +163,8 @@ ALTER TABLE `productos`
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_cuenta` (`id_cuenta`);
 
 --
 -- Indices de la tabla `ventas`
@@ -141,6 +185,18 @@ ALTER TABLE `categorias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `cuentas`
+--
+ALTER TABLE `cuentas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `facturas`
 --
 ALTER TABLE `facturas`
@@ -156,7 +212,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
@@ -169,6 +225,12 @@ ALTER TABLE `ventas`
 --
 
 --
+-- Filtros para la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  ADD CONSTRAINT `direcciones_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`);
+
+--
 -- Filtros para la tabla `facturas`
 --
 ALTER TABLE `facturas`
@@ -179,6 +241,12 @@ ALTER TABLE `facturas`
 --
 ALTER TABLE `productos`
   ADD CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id`);
+
+--
+-- Filtros para la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_2` FOREIGN KEY (`id_cuenta`) REFERENCES `cuentas` (`id`);
 
 --
 -- Filtros para la tabla `ventas`

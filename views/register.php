@@ -12,7 +12,7 @@
 
 	<?php include('navbar.php'); ?>
 
-	<div class="login">
+	<div class="login login-box">
 
 		<div class="login-triangle"></div>
 		<h2 class="login-header">Cree una cuenta</h2>

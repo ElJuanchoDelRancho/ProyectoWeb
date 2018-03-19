@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" type="image/png" href="../assets/img/icon.png"/>
 	<script src="../assets/js/jquery-3.2.1.min.js"></script>
 	<script src="../assets/js/carrusel.js"></script>
-	<title>StrongSports</title>
+	<title>StrongSports | Contacto</title>
 </head>
 <body>
 

@@ -19,7 +19,6 @@
 				{
 					$this->closeSession();
 					session_start();
-					
 					$this->closeSession();
 				}
 				else if (isset($_POST['ingresar']))

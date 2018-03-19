@@ -211,7 +211,7 @@
 						</div>
 					</div>
 					<div class="nav-link">
-						<a href="contacto.php" class="dropbtn">Contacto</a>
+						<a href="contact.php" class="dropbtn">Contacto</a>
 					</div>
 				</div>
 			</div>
