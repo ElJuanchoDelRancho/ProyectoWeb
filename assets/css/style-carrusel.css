@@ -13,6 +13,12 @@
 	align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+	.slideshow-container {
+		height: 55vw;
+	}
+}
+
 .mySlides {
 	display: none;
 	width: 100%;

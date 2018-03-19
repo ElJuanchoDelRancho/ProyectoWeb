@@ -1,6 +1,6 @@
 input[type=text], input[type=password], input[type=email] {
 	height: 33px;
-	width: 80%;
+	width: 90%;
 }
 
 input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
@@ -10,7 +10,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
 input, textarea {
 	outline: none;
 	padding-left: 0.5em;
-	transition: all 0.5s;
+	transition: all 0.3s;
 	border: 1px solid #a8a8a8;
 	font-size: 12pt;
 }
@@ -19,7 +19,7 @@ textarea {
 	font-family: sans-serif;
 	padding: 0.5em;
 	resize: none;
-	width: 90%;
+	width: 95%;
 }
 
 textarea:hover {

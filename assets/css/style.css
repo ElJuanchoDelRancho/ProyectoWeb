@@ -16,7 +16,7 @@
 
 .smallcontainer {
 	width: 80%;
-	padding: 15px 40px;
+	padding: 15px 40px 35px 40px;
 	margin: 0 auto;
 }
 
@@ -31,8 +31,14 @@
 }
 
 .jumbo {
-    padding: 90px 0 0 0;
+    padding: 70px 0 0 0;
     background-color: #fbfbfb;
+}
+
+@media only screen and (max-width: 768px) {
+	.jumbo, .container {
+		padding: 10px 0 0 0;
+	}
 }
 
 [class*='col-'] {
@@ -43,9 +49,9 @@
 }
 
 .map {
-	width: 90%;
+	width: 100%;
 	height: 70vh;
-	margin: 10% 5%;
+	margin: 10% 0%;
 	border: none;
 }
 

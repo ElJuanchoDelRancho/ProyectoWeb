@@ -12,20 +12,8 @@
 <body>
 
 	<div class="navbar">
-		<div class="banner">
-			<div class="logo">
-				<a href="main.php"></a>
-			</div>
-			<div class="searchbar">
-				<form>
-					<input type="text" name="searchbar1" placeholder="Buscar">
-				</form>
-			</div>
-			<div class="log-links">
-				<div class="log-link"><a href="register.php">Registrarse</a></div>
-				<div class="log-link"><a href="#">Iniciar Sesión</a></div>
-			</div>
-		</div>
+
+		<?php include('banner_session.php'); ?>
 
 		<nav>
 			<div class="nav-content">
