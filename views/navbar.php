@@ -24,6 +24,7 @@
 			{
 				include('banner.php');
 			}*/
+			include('banner.php');
 		?>
 
 		<nav>
