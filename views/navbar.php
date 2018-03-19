@@ -14,14 +14,15 @@
 	<div class="navbar">
 
 		<?php
-			if(isset($_SESSION["nombre_usuario"]))
+			/*if(isset($_SESSION["nombre_usuario"]))
 		  	{
 		    	include('banner_session.php');
 		  	}
 		  	else
 		  	{
 		  		include('banner.php');
-		  	}
+		  	}*/
+		  	include('banner.php');
 		?>
 
 		<nav>
