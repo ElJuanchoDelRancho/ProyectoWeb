@@ -18,6 +18,9 @@
 				if (isset($_GET['logout']))
 				{
 					$this->closeSession();
+					session_start();
+					
+					$this->closeSession();
 				}
 				else if (isset($_POST['ingresar']))
 				{
@@ -38,16 +41,13 @@
 	    {
 	    	try
 			{
-				$nombreUsuario = 'juan'; //$_POST['usuario'];
-				$contrasena = 'juan'; //$_POST['contrasena'];
+				$nombreUsuario = $_POST['usuario'];
+				$contrasena = $_POST['contrasena'];
 				$this->setNames();
 				$consulta = "SELECT * FROM cuentas WHERE nombreUsuario = ? AND contrasena = ?";
 				$query_exec = $this->connection->prepare($consulta);
 				$query_exec->execute(array($nombreUsuario, $contrasena));
-				$numeroFilas = $query_exec->fetch(PDO::FETCH_ASSOC);
-				/*foreach ($numeroFilas as $value) {
-					echo $value;
-				}*/
+				$numeroFilas = $query_exec->fetchAll();
 				if(count($numeroFilas) == 1)
 				{
 					$usuario = $nombreUsuario;
@@ -72,7 +72,7 @@
 				return false;
 	    }
 
-	    public function closeSession () 
+	    public function closeSession() 
 	    {
 	    	session_destroy();
 	    }

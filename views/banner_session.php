@@ -21,10 +21,10 @@
 			</div>
 			<div class="col-3">
 				<div class="profile">
-					<a href="#" class="profile-link font">
+					<a href="?logout" class="profile-link font">
 						<div class="profile-icon"><i class="fas fa-user-circle"></i></div>
 						<div class="profile-username">
-							<p><b>Juan Castillo</b></p>
+							<p><b> <?php echo $_SESSION['nombre_usuario']; ?></b></p>
 							<p class="cs"><b>Cerrar sesión</b></p>
 						</div>
 					</a>

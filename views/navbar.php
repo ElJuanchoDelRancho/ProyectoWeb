@@ -14,17 +14,14 @@
 	<div class="navbar">
 
 		<?php
-			/*require_once('../assets/php/login.php');
-			$session = new Login();
-			if($session->thereIsSession())
-			{
-				include('banner_session.php');
-			}
-			else
-			{
-				include('banner.php');
-			}*/
-			include('banner.php');
+			if(isset($_SESSION["nombre_usuario"]))
+		  	{
+		    	include('banner_session.php');
+		  	}
+		  	else
+		  	{
+		  		include('banner.php');
+		  	}
 		?>
 
 		<nav>

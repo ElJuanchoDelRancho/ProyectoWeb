@@ -1,3 +1,12 @@
+<?php
+	require_once('../assets/php/login.php');
+	$session = new Login();
+	/*if($session->thereIsSession() == true)
+	{
+		header('Location: main.php');
+	}*/
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
