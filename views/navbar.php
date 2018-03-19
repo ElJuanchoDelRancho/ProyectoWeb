@@ -14,7 +14,7 @@
 	<div class="navbar">
 
 		<?php
-			require_once('../assets/php/login.php');
+			/*require_once('../assets/php/login.php');
 			$session = new Login();
 			if($session->thereIsSession())
 			{
@@ -23,7 +23,7 @@
 			else
 			{
 				include('banner.php');
-			}
+			}*/
 		?>
 
 		<nav>
