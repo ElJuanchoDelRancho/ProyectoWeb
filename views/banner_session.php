@@ -23,7 +23,10 @@
 				<div class="profile">
 					<a href="#" class="profile-link font">
 						<div class="profile-icon"><i class="fas fa-user-circle"></i></div>
-						<div class="profile-username"><p><b>Juan Castillo</b></p></div>
+						<div class="profile-username">
+							<p><b>Juan Castillo</b></p>
+							<p class="cs"><b>Cerrar sesión</b></p>
+						</div>
 					</a>
 				</div>
 			</div>

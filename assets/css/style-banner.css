@@ -91,7 +91,10 @@
 	width: 50%;
 	height: 100%;
 	float: left;
-	line-height: 5vw;
+}
+
+.cs {
+	line-height: 26px;
 }
 
 .profile-icon {

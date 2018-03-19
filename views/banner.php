@@ -20,7 +20,7 @@
 			</div>
 			<div class="col-3 log-links">
 				<div class="log-link"><a href="register.php">Registrarse</a></div>
-				<div class="log-link"><a href="#">Iniciar Sesión</a></div>
+				<div class="log-link"><a href="Login.php">Iniciar Sesión</a></div>
 			</div>
 		</div>
 	</div>

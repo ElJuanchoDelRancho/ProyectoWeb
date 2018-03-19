@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>StrongSports | Registro</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style-tarjeta.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style-forms.css">
+	<link rel="shortcut icon" type="image/png" href="../assets/img/icon.png"/>
 </head>
 <body>
 

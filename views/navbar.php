@@ -13,7 +13,18 @@
 
 	<div class="navbar">
 
-		<?php include('banner_session.php'); ?>
+		<?php
+			require_once('../assets/php/login.php');
+			$session = new Login();
+			if($session->thereIsSession())
+			{
+				include('banner_session.php');
+			}
+			else
+			{
+				include('banner.php');
+			}
+		?>
 
 		<nav>
 			<div class="nav-content">
