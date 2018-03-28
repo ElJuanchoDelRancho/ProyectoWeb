@@ -1,3 +1,5 @@
 <?php
-	header('Location: views/main.php');
+
+	header('Location: public_html/');
+
 ?>
