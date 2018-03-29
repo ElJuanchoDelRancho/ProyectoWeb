@@ -165,6 +165,7 @@ textarea:hover {
 }
 
 button {
+	outline: none;
 	width: 80%;
 	border: 2px solid #333;
 	background-color: #333;
@@ -219,6 +220,10 @@ button:hover {
 .searchbar {
 	text-align: center;
 	line-height: 7vw;
+}
+
+.searchbar form {
+	margin: auto auto;
 }
 
 .searchbar input {

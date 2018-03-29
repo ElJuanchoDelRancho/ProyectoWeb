@@ -36,6 +36,10 @@
 	line-height: 7vw;
 }
 
+.searchbar form {
+	margin: auto auto;
+}
+
 .searchbar input {
 	width: 60% !important;
 }

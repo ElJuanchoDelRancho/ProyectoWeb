@@ -14,20 +14,24 @@
 
 		public function Contact()
 		{
+			$session = new Login();
+
 			if(isset($_POST['correo']))
 			{
 				$mail = new Mail();
 				$mail->mailUser = $_POST['correo'];
-				$mail->subject = 'Comentario a StrongSports';
-				$mail->message = "Hola, soy " . $_POST['nombre'] . " " . $_POST['apellido'] . " y me gustaría decirle a StrongSports: \n " .
-								$_POST['comentario'] . "\n Gracias por su atención \n Tel: " . $_POST['telefono'];
+				$mail->subject = "Comentario a StrongSports";
+				$mail->message = "Hola, soy " . $_POST['nombre'] . " " . $_POST['apellido'] . " y me gustaría decirle a StrongSports: \n" . $_POST['comentario'] . " \nGracias por su atención \nTel: " . $_POST['telefono'];
 				$result = $mail->receiveMail();
-				if($result == true)
+				unset($_POST['correo']);
+
+				/*if($result == true)
 					echo "<script>alert('Eres perron');</script>";
 				else
 					echo "<script>alert('No eres perron')</script>";
+				self::Redirect('home', 'contact');*/
 			}
-			$session = new Login();
+			
 			Views::SetTitle('Contacto');
 			Views::Render('home', 'contact');
 		}
