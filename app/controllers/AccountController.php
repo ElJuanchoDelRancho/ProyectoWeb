@@ -10,7 +10,7 @@
 			$session = new Login();
 			if ($session->thereIsSession() == true)
 				self::Redirect('home', 'index');
-			Views::SetTitle('Inicia Sesión');
+			Views::setTitle('Inicia Sesión');
 			Views::Render('account', 'login');
 		}
 
@@ -19,7 +19,7 @@
 			$session = new Login();
 			if($session->thereIsSession() == true)
 				self::Redirect('home', 'index');
-			Views::SetTitle('Regístrate');
+			Views::setTitle('Regístrate');
 			Views::Render('account', 'register');
 		}
 
@@ -83,7 +83,7 @@
 				self::Redirect('home', 'index');
 			}
 			
-			Views::SetTitle('Regístrate');
+			Views::setTitle('Regístrate');
 			Views::Render('account', 'register-next');
 		}
 

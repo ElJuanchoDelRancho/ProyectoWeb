@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript">
+		var action = <?php echo $modal; ?>;
+	</script>
 </head>
 <body>
 
@@ -27,6 +30,25 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="myModal" class="modal">
+
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+	    		<h2><?php echo $modalHeader; ?></h2>
+			</div>
+			<div class="modal-body">
+				<?php echo $modalBody; ?>
+			</div>
+			<div class="modal-footer">
+				<h4>&copy; Strong Sports 2018</h4>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="assets/js/modal-action.js"></script>
 
 </body>
 </html>
