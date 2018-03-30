@@ -22,10 +22,18 @@
 			if(isset($_POST['correo']))
 			{
 				$mail = new Mail();
-				$mail->mailUser = $_POST['correo'];
+				$mail->mailFrom = $_POST['correo'];
+				$mail->mailTo = $mail->mailCompany;
 				$mail->subject = "Comentario a StrongSports";
 				$mail->message = "Hola, soy " . $_POST['nombre'] . " " . $_POST['apellido'] . " y me gustaría decirle a StrongSports: \n" . $_POST['comentario'] . " \nGracias por su atención \nTel: " . $_POST['telefono'];
-				$result = $mail->receiveMail();
+				$result = $mail->sendMail();
+				$mail = new Mail();
+				$mail->mailFrom = $mail->mailCompany;
+				$mail->mailTo = $_POST['correo'];
+				$mail->subject = "StrongSports - Correo de confirmación";
+				$mail->message = "Hola, " . $_POST['nombre'] . " " . $_POST['apellido'] . " te enviamos este correo para confirmar que nos ha llegado tu mensaje \nTe responderemos lo más pronto posible \nStrongSports";
+				$confirm = $mail->sendMail();
+				$result = $result && $confirm;
 				unset($_POST['correo']);
 				$modal = 1;
 				if($result == true)

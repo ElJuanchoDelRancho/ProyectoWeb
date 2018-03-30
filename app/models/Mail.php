@@ -2,10 +2,12 @@
 
 	class Mail
 	{
-		
-		private $mailCompany;
 
-		public $mailUser;
+		public $mailCompany;
+		
+		public $mailTo;
+
+		public $mailFrom;
 
 		public $subject;
 
@@ -16,13 +18,13 @@
 			$this->mailCompany = 'rejuan.castillo@gmail.com';
 		}
 
-		public function receiveMail()
+		public function sendMail()
 		{
-			$cabeceras = "From: " . $this->mailUser . "\r\n" . "Reply-To: " . $this->mailUser . "\r\n" . "X-Mailer: PHP/" . phpversion();
-			return mail($this->mailCompany, $this->subject, $this->message, $cabeceras);
+			$headers = "From: " . $this->mailFrom . "\r\n" . "Reply-To: " . $this->mailFrom . "\r\n" . "X-Mailer: PHP/" . phpversion();
+			return mail($this->mailTo, $this->subject, $this->message, $headers);
 		}
 
-		public function sendMail()
+		/*public function sendMail()
 		{
 			$this->message = "Tu correo ha sido enviado con éxito a StrongSports";
 		    $headers = "MIME-Version: 1.0\r\n";
@@ -32,7 +34,7 @@
             $headers .= "X-Priority: 3";
             $headers .= "X-Mailer: smail-PHP " . phpversion();
 			return mail($this->mailUser, $this->subject, $this->message, $headers);
-		}
+		}*/
 
 	}
 
