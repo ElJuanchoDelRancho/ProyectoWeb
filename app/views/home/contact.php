@@ -42,7 +42,7 @@
 				<?php echo $modalBody; ?>
 			</div>
 			<div class="modal-footer">
-				<h4>&copy; Strong Sports 2018</h4>
+				<h4>&copy; StrongSports 2018</h4>
 			</div>
 		</div>
 

@@ -8,7 +8,7 @@
 		<div class="footer-content">
 		</div>
 		<div class="footer-below">
-			<p align="center">&copy; Strong Sports 2018</p>
+			<p align="center">&copy; StrongSports 2018</p>
 		</div>
 	</footer>
 </body>
