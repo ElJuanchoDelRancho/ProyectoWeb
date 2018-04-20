@@ -12,7 +12,7 @@
 		<div class="productos">
 			<div class="col-4">
 				<div class="tarjeta">
-					<img src="assets/img/products/example1.jpeg"/>
+					<img src="assets/img/products/example1.jpg"/>
 					<div class="add-to-cart">
 						<i class="ion-android-add"></i>
 						<span>Añadir al carrito</span>
@@ -24,7 +24,7 @@
 					    	<s>$3299.00</s>$3000.00
 					  	</div>
 					</div>
-					<a href="#"></a>
+					<a href="?c=products&a=select&id=2"></a>
 				</div>
 			</div>
 			<div class="col-4">
@@ -41,12 +41,12 @@
 				    		<s>$849.00</s>$800.00
 				  		</div>
 					</div class="info-productos">
-					<a href="#"></a>
+					<a href="?c=products&a=select&id=15"></a>
 				</div>
 			</div>
 			<div class="col-4">
 				<div class="tarjeta">
-					<img src="assets/img/products/example3.jpeg"/>
+					<img src="assets/img/products/example3.jpg"/>
 					<div class="add-to-cart">
 						<i class="ion-android-add"></i>
 						<span>Añadir al carrito</span>
@@ -57,7 +57,8 @@
 				  		<div class="price">
 				    		<s>$109.00</s>$100.00
 				  		</div>
-					</div class="info-productos"><a href="#"></a>
+					</div class="info-productos">
+					<a href="?c=products&a=select&id=11"></a>
 				</div>
 			</div>
 		</div>

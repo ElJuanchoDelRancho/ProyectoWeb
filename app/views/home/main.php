@@ -8,15 +8,15 @@
 	
 	<div class="slideshow-container">
 		<div class="mySlides fade">
-			<img src="assets/img/carrusel/carrusel1.jpeg">
+			<img src="assets/img/carrusel/carrusel1.jpg">
 			<div class="text">Uniformes para equipos</div>
 		</div>
 		<div class="mySlides fade">
-			<img src="assets/img/carrusel/carrusel2.jpeg">
+			<img src="assets/img/carrusel/carrusel2.jpg">
 			<div class="text">Raquetas</div>
 		</div>
 		<div class="mySlides fade">
-			<img src="assets/img/carrusel/carrusel3.jpeg">
+			<img src="assets/img/carrusel/carrusel3.jpg">
 			<div class="text">Pesas</div>
 		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
