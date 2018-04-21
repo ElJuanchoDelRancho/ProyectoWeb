@@ -122,33 +122,23 @@
 			}
 		}
 
-		public function getByCategory()
+		public function getByCategory($cat, $sexo)
 		{
-			$args = func_get_args();
-			$categories = count($args);
 			$this->setNames();
-			switch($categories)
-			{
-				case 1:
-					$cat = $args[0];
-					$consulta = "SELECT productos.*, categorias.nombre AS nombre_cat 
-								FROM productos, categorias_productos, categorias WHERE 
-								productos.id = categorias_productos.id_producto AND 
-								categorias_productos.id_categoria = categorias.id AND 
-								categorias.nombre = ?";
-					$query_exec = $this->connection->prepare($consulta);
-					$query_exec->execute(array($cat));
-					if($query_exec)
-						return $query_exec->fetchAll();
-					else
-						return false;
-
-					break;
-
-			}
+			$consulta = "SELECT productos.*, categorias.nombre AS nombre_cat 
+						FROM productos, categorias_productos, categorias WHERE 
+						productos.id = categorias_productos.id_producto AND 
+						categorias_productos.id_categoria = categorias.id AND 
+						categorias.nombre = ? AND (categorias_productos.sexo = ? OR 
+						categorias_productos.sexo = 'U')";
+			$query_exec = $this->connection->prepare($consulta);
+			$query_exec->execute(array($cat, $sexo));
+			if($query_exec)
+				return $query_exec->fetchAll();
+			else
+				return false;
 		}
 
 	}
-
 
 ?>

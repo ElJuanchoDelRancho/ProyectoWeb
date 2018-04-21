@@ -49,6 +49,9 @@ body {
 	.jumbo, .container {
 		padding: 10px 0 0 0;
 	}
+	.smallcontainer {
+		padding: 15px 25px 40px 25px;
+	}
 }
 
 [class*='col-'] {
@@ -733,10 +736,6 @@ nav {
 .tarjeta.hover .add-to-cart i {
 	background-color: #2980b9;
 }
-
-/* ---------- style-producto ---------- */
-
-
 
 /* ---------- style-footer ---------- */
 

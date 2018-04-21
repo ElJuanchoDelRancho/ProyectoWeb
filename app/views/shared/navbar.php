@@ -23,25 +23,25 @@
 							<div class="col-8">
 								<h3>HOMBRES</h3>
 								<ul class="col-6">
-									<li><a href="?c=products&a=category&cat=running">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol</a></li>
-									<li><a href="?c=products&a=category&cat=basquetbol">Basquetbol</a></li>
-									<li><a href="?c=products&a=category&cat=box">Box</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=running">Running</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=futbol">Futbol</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=basquetbol">Basquetbol</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=box">Box</a></li>
 								</ul>
 								<ul class="col-6">
-									<li><a href="?c=products&a=category&cat=gimnasio">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol americano">Futbol Americano</a></li>
-									<li><a href="?c=products&a=category&cat=tenis">Tenis</a></li>
-									<li><a href="?c=products&a=category&cat=ciclismo">Ciclismo</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=gimnasio">Gimnasio</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=futbol-americano">Futbol Americano</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=tenis">Tenis</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=ciclismo">Ciclismo</a></li>
 								</ul>
 							</div>
 							<div class="col-4">
 								<h3>MUJERES</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=running">Running</a></li>
-									<li><a href="?c=products&a=category&cat=gimnasio">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol</a></li>
-									<li><a href="?c=products&a=category&cat=tenis">Tenis</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=running">Running</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=gimnasio">Gimnasio</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=futbol">Futbol</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=tenis">Tenis</a></li>
 								</ul>
 							</div>
 						</div>
@@ -52,35 +52,25 @@
 							<div class="col-4">
 								<h3>CALZADO</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Basquetbol</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol Americano</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Casual</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=calzado-running">Running</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=calzado">Casual</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=calzado-futbol">Futbol</a></li>
 								</ul>
 							</div>
 							<div class="col-4">
 								<h3>ROPA</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol Americano</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Basquetbol</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Uniformes</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Playeras</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Shorts y Pantalones</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=playeras">Playeras</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=chamarras">Chamarras y suéteres</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=pantalones">Shorts y Pantalones</a></li>
 								</ul>
 							</div>
 							<div class="col-4">
 								<h3>ACCESORIOS</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Futbol Americano</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Balones</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=mochilas">Mochilas</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=accesorios-gimnasio">Gimnasio</a></li>
+									<li><a href="?c=products&a=category&s=h&cat=balones">Balones</a></li>
 								</ul>
 							</div>
 						</div>
@@ -91,31 +81,24 @@
 							<div class="col-4">
 								<h3>CALZADO</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Casual</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Sandalias</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Calcetas</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=calzado-running">Running</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=calzado">Casual</a></li>
 								</ul>
 							</div>
 							<div class="col-4">
 								<h3>ROPA</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Blusas</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Tops y Bras</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Leggings</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Shorts y Pantalones</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Uniformes</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=blusas">Blusas</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=tops">Tops y Bras</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=leggings">Leggings y shorts</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=chamarras">Chamarras y suéteres</a></li>
 								</ul>
 							</div>
 							<div class="col-4">
 								<h3>ACCESORIOS</h3>
 								<ul>
-									<li><a href="?c=products&a=category&cat=futbol">Running</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Fitness</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Gimnasio</a></li>
-									<li><a href="?c=products&a=category&cat=futbol">Muñequeras</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=mochilas">Mochilas</a></li>
+									<li><a href="?c=products&a=category&s=m&cat=accesorios-gimnasio">Gimnasio</a></li>
 								</ul>
 							</div>
 						</div>

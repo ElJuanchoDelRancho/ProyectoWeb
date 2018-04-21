@@ -19,12 +19,18 @@
 		public function Category()
 		{
 			$session = new Login();
-			$cat = ucwords($_GET['cat']);
+			$cat = ucwords($_GET['cat'], "-");
+			$sexo = ucwords($_GET['s']);
 			$x = new Productos();
-			$datos = $x->getByCategory($cat);
+			$datos = $x->getByCategory($cat, $sexo);
 			Views::setTitle('Productos');
 			Views::setData('datos_p', $datos);
 			Views::Render('product', 'products');
+		}
+
+		public function Search()
+		{
+			
 		}
 
 	}

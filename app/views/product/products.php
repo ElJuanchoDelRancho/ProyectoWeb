@@ -9,10 +9,12 @@
 		<div class="font">
 			<h1 align="center">
 				<?php 
-				if(isset($datos_p[0]['nombre_cat']))
-					echo $datos_p[0]['nombre_cat'];
-				else
+				if(isset($datos_p[0]['nombre_cat'])) {
+					$titulo = str_replace("-", " ", $datos_p[0]['nombre_cat']);
+					echo $titulo;
+				} else {
 					echo "No existe ningún producto";
+				}
 				?>	
 			</h1>
 		</div>
@@ -32,7 +34,7 @@
 					  	<h3><?php echo $x["nombre"]; ?></h3>
 					  	<p><?php echo $x["descripcion"]; ?></p>
 					  	<div class="price">
-					    	<s>$3299.00</s>$ <?php echo $x["precio"]; ?>
+					    	$ <?php echo $x["precio"]; ?>
 					  	</div>
 					</div>
 					<a href="?c=products&a=select&id=<?php echo $x['id']; ?>"></a>
