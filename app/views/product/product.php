@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  	<div class="jumbo" style="padding: 10px 7%; display: inline-block;">
+  	<div class="jumbo" style="padding: 30px 7%; display: inline-block;">
   		<div class="col-6">
   			<div class="productos">
 				<div class="tarjeta">
