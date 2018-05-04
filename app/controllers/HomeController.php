@@ -8,8 +8,26 @@
 		public function Index()
 		{
 			$session = new Login();
+			if (isset($_POST['en'])) {
+			    $cookie_name = "IDIOMA";
+				$cookie_value = "en";
+				setcookie($cookie_name, $cookie_value, time() + (86400 * 3), "/"); // 86400 = 1 day
+				header('Location: ./');
+			}
+			if (isset($_POST['es'])) {
+			    $cookie_name = "IDIOMA";
+				$cookie_value = "es";
+				setcookie($cookie_name, $cookie_value, time() + (86400 * 3), "/"); // 86400 = 1 day
+				header('Location: ./');
+			}
 			Views::setTitle();
 			Views::Render('home', 'main');
+		}
+
+		public function Idiom()
+		{
+			$session = new Login();
+			require_once('../app/views/home/botones.php');
 		}
 
 		public function Contact()

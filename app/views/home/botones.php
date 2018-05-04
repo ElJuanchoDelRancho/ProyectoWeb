@@ -2,7 +2,7 @@
   <html>
   <head>
     <title></title>
-<link rel="stylesheet" type="text/css" href="../assets/css/botones.css">
+<link rel="stylesheet" type="text/css" href="../public_html/assets/css/botones.css">
   </head>
   <body>
     
@@ -19,7 +19,7 @@
       <h2 class="mrng-60-top">Elige tu lenguaje</h2>
     </div>
   </div>
-  <form action="./shared/header.php" method="POST" id="form1">
+  <form action="?c=home&a=index" method="POST" id="form1">
 </form>
   <div class="row">
     <div class="col-md-3 col-sm-3 col-xs-6"> <button type="submit" form="form1" class="btn btn-sm animated-button thar-one" value="Submit" id="es" name="es">Español </button> </div>
@@ -27,19 +27,6 @@
     <div class="col-md-3 col-sm-3 col-xs-6"> </div>
     <div class="col-md-3 col-sm-3 col-xs-6"> <button type="submit" form="form1" class="btn btn-sm animated-button thar-one" value="Submit" id="en" name="en">English</button> </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <br>
    <footer class="jumbotron text-center">
   <div class="container">
