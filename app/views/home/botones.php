@@ -19,7 +19,7 @@
       <h2 class="mrng-60-top">Elige tu lenguaje</h2>
     </div>
   </div>
-  <form action="header.php" method="POST" id="form1">
+  <form action="./shared/header.php" method="POST" id="form1">
 </form>
   <div class="row">
     <div class="col-md-3 col-sm-3 col-xs-6"> <button type="submit" form="form1" class="btn btn-sm animated-button thar-one" value="Submit" id="es" name="es">Español </button> </div>
