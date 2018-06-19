@@ -275,7 +275,6 @@ a.animated-button.thar-three {
 	position: relative;
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
 }
 a.animated-button.thar-three:hover {
 	color: #000 !important;
@@ -299,7 +298,6 @@ a.animated-button.thar-three:before {
 	color: #000 !important;
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
 }
 a.animated-button.thar-four {
 	color: #fff;
@@ -308,7 +306,6 @@ a.animated-button.thar-four {
 	position: relative;
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
 }
 a.animated-button.thar-four:hover {
 	color: #000 !important;
@@ -332,5 +329,4 @@ a.animated-button.thar-four:before {
 	color: #000 !important;
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
 }

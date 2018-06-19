@@ -20,7 +20,7 @@
 			<div class="col-6"><input type="password" name="contrasena" placeholder="Contraseña" required="true"></div>
 			<div class="col-6"></div>
 			<div class="col-6"><input type="email" name="email" placeholder="Email" required="true"></div>
-			<div class="col-6"><input type="email" name="confirmar" placeholder="Confirmar email" required="true"></div>
+			<div class="col-6"><input type="email" name="email-c" placeholder="Confirmar email" required="true"></div>
 			<div class="col-6"><input type="text" name="tarjeta" placeholder="Tarjeta" minlength="16" maxlength="16" required="true"></div>
 			<div class="col-3"><input type="text" name="Cuv" placeholder="CUV" required="true"></div>
 			<div class="col-3"><input type="text" name="exp" placeholder="ExpData" required="true"></div>

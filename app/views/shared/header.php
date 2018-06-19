@@ -1,3 +1,11 @@
+<?php
+	if(!isset($_COOKIE["IDIOMA"])) {
+    	echo "<script>window.location = './?c=home&a=idiom'</script>";
+    } else {
+    	$idioma = $_COOKIE["IDIOMA"];
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,35 +16,24 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/f.js"></script>
+	<script type="text/javascript" src="assets/js/products.js"></script>
 	<title><?php if(!empty(self::$title)) echo self::$title . ' | '; ?>StrongSports</title>
 </head>
-<body onload="googleTranslateElementInit();">
+<body>
 
-	<?php
-		if(!isset($_COOKIE["IDIOMA"])) {
-	    	header("Location: ?c=home&a=idiom");
-			die();
-		} else {
-			$idioma = $_COOKIE["IDIOMA"];
-		}
-	?>
+	<div id="google_translate_element" class="idioma" style="display: none !important"></div>
 
 	<script type="text/javascript">
 		function googleTranslateElementInit() {
-			<?php
-			if ($idioma == "en") {
-			?>
+			var idiom = "<?php echo $idioma; ?>";
+			if (idiom == "en") {
 				new google.translate.TranslateElement({
 			  	pageLanguage: 'es', 
 			  	includedLanguages: 'en,es'}, 
 			  	'google_translate_element');
-			<?php
 			}
-			?>
-			
 		}
 	</script>
 
 </body>
 </html>
-

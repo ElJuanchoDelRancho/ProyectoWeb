@@ -1,5 +1,5 @@
 <?php
-	
+
 	class ProductsController extends BaseController
 	{
 
@@ -31,6 +31,89 @@
 		public function Search()
 		{
 			
+		}
+
+		public function Confirmation()
+		{
+			$session = new Login();
+			Views::setTitle("Fecha de envio");
+			Views::Render('product', 'confirmation');
+		}
+
+		public function Cart()
+		{
+			$session = new Login();
+			$sessionExists = $session->thereIsSession();
+			$controller = new CartController();
+			$carrito = $controller->GetItems();
+			Views::setTitle('Carrito');
+			Views::setData('carrito', $carrito);
+			Views::setData('sesion', $sessionExists);
+			Views::Render('product', 'cart');
+		}
+
+		public function Bill()
+		{
+			$session = new Login();
+			$sessionExists = $session->thereIsSession();
+			if ($sessionExists == false)
+				return false;
+			$cuentaController = new Cuentas();
+			$usuario = $cuentaController->getCuentasByUsername($_SESSION['nombre_usuario']);
+			
+			date_default_timezone_set('America/Mexico_City');
+			$fechaPedido = date("Y-m-d");
+			$fechaA = $fechaPedido;
+			$arr = explode("-", $fechaA);
+			$jd = GregorianToJD($arr[1], $arr[2], $arr[0]);
+			$dia = JDDayOfWeek($jd, 0);
+
+			$x = 1;
+			while($x < 4) {
+
+				$fechaA = strtotime("+1 day", strtotime($fechaA));
+				$fechaA = date("Y-m-d", $fechaA);
+				$arr = explode("-", $fechaA);
+
+				$jd = GregorianToJD($arr[1], $arr[2], $arr[0]);
+				$dia = JDDayOfWeek($jd, 0);
+				//echo $dia;
+				if($dia != 0 && $dia != 6) {
+					$x++;
+				}
+
+			}
+
+			$nuevaFactura = new Facturas();
+			$idFactura = $nuevaFactura->createFacturas($usuario['id'], 0, $fechaPedido, $fechaA, 0);
+
+			$controller = new CartController();
+			$carrito = $controller->GetItems();
+
+			$total = 0;
+			$items = 0;
+			foreach ($carrito as $x) {
+				$nuevaVenta = new Ventas();
+				$nuevaVenta->createVentas($x['id'], $x['cantidad'], $x['subtotal'], $idFactura);
+				$total += $x['subtotal'];
+				$items += $x['cantidad'];
+			}
+
+			$descuentos = new Descuentos();
+			$listaDescuentos = $descuentos->readDescuentos();
+			$descuento = 0;
+			foreach ($listaDescuentos as $desc) {
+				if ($items >= $desc['cantidad']) {
+					$descuento = $desc['porcentaje'];
+				}
+			}
+			$total -= $total * ($descuento / 100);
+			$nuevaFactura->updateFacturas($idFactura, $usuario['id'], $total, $fechaPedido, $fechaA, 0);
+
+			Views::setTitle('Factura');
+			Views::setData('carrito', $carrito);
+			Views::setData('sesion', $sessionExists);
+			Views::Render('product', 'bill');
 		}
 
 	}

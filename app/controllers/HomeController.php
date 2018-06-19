@@ -9,16 +9,19 @@
 		{
 			$session = new Login();
 			if (isset($_POST['en'])) {
-			    $cookie_name = "IDIOMA";
+				$cookie_name = "IDIOMA";
 				$cookie_value = "en";
-				setcookie($cookie_name, $cookie_value, time() + (86400 * 3), "/"); // 86400 = 1 day
-				header('Location: ./');
+				setcookie($cookie_name, $cookie_value, time() + (86400 * 3)); // 86400 = 1 day
+				$cookie_name = "googtrans";
+				$cookie_value = "/es/en";
+				setcookie($cookie_name, $cookie_value, time() + (86400 * 3)); // 86400 = 1 day
+				header("Location: ./");
 			}
 			if (isset($_POST['es'])) {
 			    $cookie_name = "IDIOMA";
 				$cookie_value = "es";
-				setcookie($cookie_name, $cookie_value, time() + (86400 * 3), "/"); // 86400 = 1 day
-				header('Location: ./');
+				setcookie($cookie_name, $cookie_value, time() + (86400 * 3)); // 86400 = 1 day
+				header("Location: ./");
 			}
 			Views::setTitle();
 			Views::Render('home', 'main');

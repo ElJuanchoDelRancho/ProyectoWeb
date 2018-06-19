@@ -124,6 +124,22 @@
 			}
 		}
 
+		public function getCuentasByUsername($username)
+		{
+			try
+			{
+				$this->setNames();
+				$consulta = "SELECT * FROM cuentas WHERE nombreUsuario = ? LIMIT 1";
+				$query_exec = $this->connection->prepare($consulta);
+				$query_exec->execute(array($username));
+				return $query_exec->fetch(PDO::FETCH_ASSOC);
+			}
+			catch(Exception $e)
+			{
+				die("Hubo un error de base de datos: " . $e->getMessage());
+			}
+		}
+
 	}
 
 ?>

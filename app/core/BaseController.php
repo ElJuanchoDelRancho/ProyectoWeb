@@ -6,6 +6,10 @@
 		require_once($file);
 	}
 
+	foreach (glob("../app/controllers/*.php") as $file) {
+		require_once($file);
+	}
+
 	class BaseController
 	{
 
