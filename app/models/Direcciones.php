@@ -123,6 +123,23 @@
 				die("Hubo un error de base de datos: " . $e->getMessage());
 			}
 		}
+
+		public function getDireccionesIdUsuario($id_usuario)
+		{
+			try
+			{
+				$this->setNames();
+				$consulta = "SELECT * FROM direcciones WHERE id_usuario = ? LIMIT 1";
+				$query_exec = $this->connection->prepare($consulta);
+				$query_exec->execute(array($id_usuario));
+				return $query_exec->fetch(PDO::FETCH_ASSOC);
+			}
+			catch(Exception $e)
+			{
+				die("Hubo un error de base de datos: " . $e->getMessage());
+			}
+		}
+
 	}
 
 

@@ -55,6 +55,22 @@
 			}
 		}
 
+		public function getVentasFactura($id_factura)
+		{
+			try
+			{
+				$this->setNames();
+				$consulta = "SELECT * FROM ventas WHERE id_factura = ?";
+				$query_exec = $this->connection->prepare($consulta);
+				$query_exec->execute(array($id_factura));
+				return $query_exec->fetchAll();
+			}
+			catch(Exception $e)
+			{
+				die("Hubo un error de base de datos: " . $e->getMessage());
+			}
+		}
+
 		public function updateVentas($id_producto, $cantidad, $subtotal, $id_factura, $id)
 		{
 			try

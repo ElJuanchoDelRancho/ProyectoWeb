@@ -117,6 +117,22 @@
 			}
 		}
 
+		public function getUsuariosIdCuenta($id_cuenta)
+		{
+			try
+			{
+				$this->setNames();
+				$consulta = "SELECT * FROM usuarios WHERE id_cuenta = ? LIMIT 1";
+				$query_exec = $this->connection->prepare($consulta);
+				$query_exec->execute(array($id_cuenta));
+				return $query_exec->fetch(PDO::FETCH_ASSOC);
+			}
+			catch(Exception $e)
+			{
+				die("Hubo un error de base de datos: " . $e->getMessage());
+			}
+		}
+
 	}
 
 ?>

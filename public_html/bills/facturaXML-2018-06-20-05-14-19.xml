@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+  <productos/>
+  <numerofactura/>
+  <nombre/>
+  <apellidos/>
+  <direccion> </direccion>
+  <codigopostal/>
+  <fechapedido/>
+  <fechaentrega/>
+  <total>$ </total>
+</factura>
+>
+      <subtotal>$ 1200</subtotal>
+    </producto>
+  </productos>
+  <numerofactura>34</numerofactura>
+  <nombre>Juan</nombre>
+  <apellidos>Castillo Rebolledo</apellidos>
+  <direccion>Hola 2A</direccion>
+  <codigopostal>45180</codigopostal>
+  <fechapedido>2018-06-19</fechapedido>
+  <fechaentrega>2018-06-22</fechaentrega>
+  <total>$ 1200</total>
+</factura>

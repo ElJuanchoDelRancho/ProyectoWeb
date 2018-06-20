@@ -76,13 +76,13 @@
 	    		<h2>Completar compra</h2>
 			</div>
 			<div class="modal-body">
-				<p>¿Está seguro de completar la compra?</p>
+				<h2>¿Está completamente seguro de completar la compra?</h2>
 			</div>
 			<div class="modal-footer">
 				<div style="display: inline-block; width: 100%;">
-					<div>
-						<button id="si">Si</button>
-					</div>
+					<form action="" method="post" style="display: block;">
+						<button type="submit" name="compra" id="si">Si</button>
+					</form>
 					<div>
 						<button id="no">No</button>
 					</div>
@@ -95,10 +95,6 @@
 	<script type="text/javascript">
 		var si = document.getElementById("si");
 		var no = document.getElementById("no");
-
-		si.onclick = function() {
-			window.location = "./?c=products&a=bill";
-		}
 
 		no.onclick = function() {
 			modal.style.animationName = "fadeOut";
